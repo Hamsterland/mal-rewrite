@@ -1,6 +1,7 @@
+import { User } from 'discord.js';
 import React from 'react';
 
-interface UserHeaderProps {
+export interface UserHeaderProps {
     name: string;
     slogan: string;
     avatar: string; 
