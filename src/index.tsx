@@ -5,7 +5,7 @@ import App from './pages/App';
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/mal-rewrite">
       <App/>
     </BrowserRouter>
   </React.StrictMode>,
