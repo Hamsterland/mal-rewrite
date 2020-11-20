@@ -11,7 +11,7 @@ function UserHeader(props: UserHeaderProps) {
     return (
         <div>
             <h1>{props.name}</h1>
-            <h2>{props.slogan}</h2>
+            <h2><i>{props.slogan}</i></h2>
         </div>
     )
 }

@@ -5,6 +5,7 @@ import UserImage, { UserImageProps } from '../components/UserImage';
 import './../styles/User.css';
 
 import tofu from './../images/tofu.png';
+import tofu2 from './../images/tofu2.png';
 
 const props: UserHeaderProps = {
     name: 'Tofu',
@@ -17,13 +18,21 @@ const desires: UserImageProps = {
     label: 'Tofu reveals his desires'
 };
 
+const love: UserImageProps = {
+    source: tofu2,
+    label: 'Tofu regularly enjoys selfcest'
+}
+
 const Tofu = () => {
     return (
         <body>
             <HomeButton/>
             <div className="container">
                 <UserHeader name={props.name} slogan={props.slogan} avatar={props.avatar}/>
-                <UserImage source={desires.source} label={desires.label}/>
+                <div className="images">
+                    <UserImage source={desires.source} label={desires.label}/>
+                    <UserImage source={love.source} label={love.label}/>
+                </div>
             </div>
         </body>
     )

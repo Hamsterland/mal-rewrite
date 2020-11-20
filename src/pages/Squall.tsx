@@ -17,7 +17,6 @@ const english: UserImageProps = {
     label: 'Squall speaks Japanese'
 };
 
-
 const Squall = () => {
     return (
         <body>
