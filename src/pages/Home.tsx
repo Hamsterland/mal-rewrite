@@ -1,6 +1,8 @@
 import React from 'react';
 import UserButton from '../components/UserButton';
 
+import { Icon } from '@iconify/react-with-api';
+
 import background from './../images/background.png';
 import './../styles/Home.css';
 
@@ -15,12 +17,17 @@ const avatars: string[] = [
     'https://cdn.discordapp.com/avatars/480092510505402380/109127498a5aa083743c3e07c4cfd4de.png?size=128'
 ]
 
+const githubLink = 'https://github.com/Hamsterland/mal-rewrite/';
+
 const Home = () => {
   return (
     <body>
       <div className="App">
         <h1 className="header">Hamsterland</h1>
         <h2 className="subheader">Rewrite's <s>Best</s> Worst Moments</h2>
+        <a href={githubLink}>
+          <Icon icon="ant-design:github-filled" className="github"/>
+        </a>
         <div className="nav-bar">
           <ul className="nav-elements">
             <li><UserButton name="Squall" avatar={avatars[0]}/></li>

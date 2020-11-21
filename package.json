@@ -50,5 +50,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@iconify/icons-mdi": "^1.0.153",
+    "@iconify/react": "^2.0.0-rc.2",
+    "@iconify/react-with-api": "^1.0.0-rc.2"
   }
 }

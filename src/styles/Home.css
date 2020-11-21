@@ -68,3 +68,9 @@ body {
     background-color: #8a8a8a;
 }
 
+.github {
+    position: fixed;
+    font-size: 3.5rem;
+    top: 1.5%;
+    color: white;
+}
