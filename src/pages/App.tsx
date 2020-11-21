@@ -7,6 +7,9 @@ import Tofu from './Tofu';
 import Alex from './Alex';
 import Rlavus from './Rlavus';
 import Maddo from './Maddo';
+import Arden from './Arden';
+import NeoDaza from './NeoDaza';
+import Mytho from './Mytho';
 
 const App = () => {
   return (
@@ -18,6 +21,9 @@ const App = () => {
         <Route path="/alex" component={Alex}/>
         <Route path="/rlavus" component={Rlavus}/>
         <Route path="/maddo" component={Maddo}/>
+        <Route path="/arden" component={Arden}/>
+        <Route path="/neodaza" component={NeoDaza}/>
+        <Route path="/mytho" component={Mytho}/>
       </Switch>
     </main>
   );

@@ -29,10 +29,8 @@ const Tofu = () => {
             <HomeButton/>
             <div className="container">
                 <UserHeader name={props.name} slogan={props.slogan} avatar={props.avatar}/>
-                <div className="images">
-                    <UserImage source={desires.source} label={desires.label}/>
-                    <UserImage source={love.source} label={love.label}/>
-                </div>
+                <UserImage source={desires.source} label={desires.label}/>
+                <UserImage source={love.source} label={love.label}/>
             </div>
         </body>
     )
