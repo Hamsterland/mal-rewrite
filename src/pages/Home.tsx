@@ -1,10 +1,11 @@
 import React from 'react';
 import UserButton from '../components/UserButton';
-
 import { Icon } from '@iconify/react-with-api';
 
 import background from './../images/background.png';
 import './../styles/Home.css';
+
+import Yuun, { YuunData } from './Yuun';
 
 const avatars: string[] = [
     'https://cdn.discordapp.com/avatars/226618912320520192/ba8cdfbee624f24800226f420b65e2c6.png?size=128',
@@ -38,6 +39,7 @@ const Home = () => {
             <li><UserButton name="Arden" avatar={avatars[5]}/></li>
             <li><UserButton name="NeoDaza" avatar={avatars[6]}/></li>
             <li><UserButton name="Mytho" avatar={avatars[7]}/></li>
+            <li><UserButton name={YuunData.username} avatar={YuunData.avatar}/></li>
           </ul>
         </div>
         <img className="background" src={background} alt="background"/>

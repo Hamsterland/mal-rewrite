@@ -10,6 +10,7 @@ import Maddo from './Maddo';
 import Arden from './Arden';
 import NeoDaza from './NeoDaza';
 import Mytho from './Mytho';
+import Yuun, { YuunData } from './Yuun';
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
         <Route path="/arden" component={Arden}/>
         <Route path="/neodaza" component={NeoDaza}/>
         <Route path="/mytho" component={Mytho}/>
+        <Route path={'/' + YuunData.username} component={Yuun}/>
       </Switch>
     </main>
   );
