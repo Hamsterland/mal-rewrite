@@ -1,31 +1,24 @@
 import React from 'react';
 import HomeButton from '../components/HomeButton';
-import UserHeader, { UserHeaderProps } from '../components/UserHeader';
 import UserImage, { UserImageProps } from '../components/UserImage';
-import './../styles/User.css';
+import styles from './../styles/User.module.scss';
+import image from '../images/alex.png';
 
-import alex from './../images/alex.png';
-
-const props: UserHeaderProps = {
-    name: 'Alex',
-    slogan: 'Life',
-    avatar: 'https://cdn.discordapp.com/avatars/343201768668266496/a3f7064bbd05fd762817c19cc43ed416.png?size=128'
-};
-
-const shutup: UserImageProps = {
-    source: alex,
+const lolicons: UserImageProps = {
+    source: image,
     label: 'Alex has something to say to pedophiles'
-};
+}
 
 const Alex = () => {
     return (
-        <body>
+        <div>
             <HomeButton/>
-            <div className="container">
-                <UserHeader name={props.name} slogan={props.slogan} avatar={props.avatar}/>
-                <UserImage source={shutup.source} label={shutup.label}/>
+            <div className={styles.container}>
+                <div className={styles.username}>Alex</div><br/>
+                <div className={styles.slogan}>Life</div><br/>
+                <UserImage source={lolicons.source} label={lolicons.label}/>
             </div>
-        </body>
+        </div>
     )
 }
 

@@ -1,11 +1,7 @@
-import Image from './Image';
-
-export default interface User {
-    username: string,
-    slogan: string,
-    avatar: string
-    images: Image[]
+interface User {
+    id: string;
+    username: string;
+    avatar: string;
 }
 
-
-
+export default User;
