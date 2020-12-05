@@ -30,7 +30,7 @@ const Home = () => {
             <div className={styles.navigation}>
                 <div className={styles.bar}>
                     <ul className={styles.elements}>
-                        {Users && Users.map(user => {
+                        {Users.map(user => {
                           return <li><UserButton name={user.username} avatar={user.avatar}/></li>
                         })}
                     </ul>
