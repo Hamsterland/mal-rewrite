@@ -6,7 +6,7 @@ import image from '../images/maddo.png';
 
 const badminton: UserImageProps = {
     source: image,
-    label: 'Rlavus is #ProChoice'
+    label: 'Maddo likes badminton, right?'
 }
 
 const Maddo = () => {

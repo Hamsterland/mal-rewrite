@@ -6,7 +6,7 @@ import image from '../images/mytho.png';
 
 const lolis: UserImageProps = {
     source: image,
-    label: 'NeoDaza makes a big mistake'
+    label: 'Mytho has interests in the underdeveloped'
 }
 
 const Mytho = () => {
